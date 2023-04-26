@@ -33,7 +33,7 @@ export const getServerSideProps = async ( { query } ) => {
   }
 }
 
-const search = ( { properties } ) => {
+const Search = ( { properties } ) => {
 
    
     const [ searchFilters, SetsearchFilters ] = useState(false);
@@ -84,4 +84,4 @@ const search = ( { properties } ) => {
   )
 }
 
-export default search
+export default Search

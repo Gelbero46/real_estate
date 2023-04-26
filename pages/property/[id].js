@@ -70,7 +70,7 @@ const PropertyDetails = ( { propertyDetails: {price,
                   }
                 ].map( (item) => {
                   return(
-                    <Flex width="50%" justifyContent="space-between" paddingRight="40px" alignItems="center" paddingY="7px" borderBottom="1px solid #ddd">
+                    <Flex key={item.name} width="50%" justifyContent="space-between" paddingRight="40px" alignItems="center" paddingY="7px" borderBottom="1px solid #ddd">
                       <Text textTransform="upperCase">{item.name}</Text>
                         <Text textTransform="upperCase" fontWeight="bold">{item.value}</Text>
                     </Flex>

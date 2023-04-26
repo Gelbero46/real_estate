@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
     router.events.on('routeChangeStart', () =>  NProgress.start());
     router.events.on('routeChangeComplete', () =>  NProgress.done());
     router.events.on('routeChangeError', () =>  NProgress.done());
-  }, []);
+  }, [router]);
   
   return (
       <ChakraProvider>
